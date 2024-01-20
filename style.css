@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  color: #fff;
+  background-color: aliceblue;
+  height: 100vh;
+  padding: 200px 0;
+}
+
+.wrapper {
+  background-color: cadetblue;
+  border-radius: 20px;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+  max-width: 350px;
+  aspect-ratio: 9 / 16;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* ________________ header ________________ */
+
+.nav-bar {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.open-menu svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.open-menu:hover {
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.search {
+  width: 1.5rem;
+  height: 1.5rem;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+/* ________________ main ________________ */
+
+section {
+  position: relative;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 2px solid pink;
+}
+
+.section-content:hover {
+  /* padding-right: 200px; */
+}
+
+.img {
+  /* flex:1; */
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 16px;
+  /* flex-basis: 15%; */
+  margin-right: 20px;
+}
+
+.description {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 70%; */
+}
+
+.name {
+  font-weight: 500;
+}
+
+.rating svg {
+  width: 1rem;
+  path {
+    fill: red;
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1px 6px 2px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.distance {
+  /* flex:1; */
+
+  /* align-self: flex-end; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* flex-basis: 15%; */
+}
+
+.distance svg {
+  transform: scaleY(-1);
+  width: 2.6rem;
+  height: 2.6rem;
+  path {
+    fill: yellow;
+  }
+}
+
+.section--sub-menu {
+  position: absolute;
+  right: 0;
+  display: flex;
+  /* display: none; */
+  width: 100px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+
+.order {
+}
+
+.bookmark {
+}
+/* ________________ mobile first ________________ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
